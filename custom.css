@@ -1,0 +1,132 @@
+/*
+@import url(https://rawcdn.githack.com/Kaiburr-kath-hound/HomebreweryStyles/86c37513be2e315f717a2e9295bfb8149dc85a80/XanatharFonts.css);
+@import url('https://rawcdn.githack.com/Kaiburr-kath-hound/HomebreweryStyles/dd727f0f152f71c588176f5902d0aa21fdbcec69/EberronFonts.css');
+*/
+
+.page { text-align:justify }
+.page { font-family: helvetica; font-size: 11.7px }
+
+.page h1,
+.page h2{ font-family: helvetica; font-variant: small-caps; text-align:left}
+.page h3,
+.page h4{ font-family: helvetica; text-align:left }
+.page h5{ font-family: helvetica; font-variant: small-caps; text-align:left }
+
+.page table tr:nth-child(odd) td {
+background-color	: #d3d3d3;
+}
+.page h1 {
+border-bottom : 2px solid #999999;
+margin-bottom : 0.3em;
+margin-top : 0.6em;
+font-size: 27px
+}
+
+.page h2 {
+margin-bottom : 0.3em;
+margin-top : 0.6em;
+font-size: 23px
+}
+
+.page h3 {
+border-bottom : 2px solid #999999;
+margin-bottom : 0.3em;
+margin-top : 0.6em;
+font-size: 20px
+}
+
+.page h4 {
+margin-bottom : 0.4em;
+margin-top : 0.6em;
+font-size: 16px
+
+}
+
+.page h5 {
+margin-bottom : 0.4em;
+margin-top : 0.6em;
+font-size: 15px
+}
+
+
+.page table {font-family: helvetica; font-size: 11px}
+
+/* Ink Friendly */
+*:is(.page,.monster,.note,.descriptive) {
+background : white !important; /* #d9d9d9 */
+filter : drop-shadow(0px 0px 3px #888) !important;
+}
+
+/*
+.page img {
+visibility : hidden;
+}
+
+*/
+
+/* A4 Page Size */
+/*
+.page{
+width  : 210mm;
+height : 296.8mm;
+}
+
+*/
+
+.page .pageNumber {color:black}
+.page .footnote {color:black}
+
+
+
+
+
+.page#p1:after{ display:none; }
+.page#p2:after{ display:none; }
+
+
+.page:after {	filter: grayscale(100%) }
+
+/*.page p+p, .page ul+p, .page ol+p { text-indent: 0em }*/
+.page h1+p, h2+p, h3+p, h4+p, h5+p, h6+p { text-indent: 1em }
+
+.page#p3 { counter-reset:phb-page-numbers }
+.page#p2 { text-align:justify;column-count:1 }
+
+
+.page	table+p{ text-indent : 1em }
+
+/* Disable drop cap */
+.page h1+p::first-letter,
+.page h1+.quote::first-letter,
+.page h1+p::first-line,
+.page h1+.quote::first-line {
+all	: unset;
+}
+
+.page .footnote {width:400px}
+
+/* HYPERLINKS */
+.page a {
+color						: inherit;
+text-decoration	: none;
+font-weight			: bold;
+}
+.page a:hover{
+text-decoration	: underline;
+}
+
+
+
+
+
+.page h1 + p::first-line {
+    font-size       : 110%; 
+    line-height     : 1.3em; 
+}
+.page h2 {
+    padding-top     : .2em;
+    margin-bottom   : .2em; 
+}
+.page h3 { margin-bottom   : .3em; }
+.page h4 { margin-bottom   : .2em; } 
+.page h5 { margin-bottom   : .2em; }
